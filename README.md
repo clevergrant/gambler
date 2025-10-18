@@ -1,22 +1,27 @@
 # 🎰 The Gambler
 
-A silly little gambling website where you press a button and either win or lose money. Completely random, with a 33% chance to win!
+A silly little gambling website where you press a button and either win or lose money. Completely random multiplier system!
 
 ## How to Play
 
-1. Click the "GAMBLE!" button
-2. Watch as you randomly win or lose money
-3. Try not to go broke!
-4. Reset when you inevitably lose everything
+1. You start with $1.00 (your buy-in)
+2. Choose how much you want to bet
+3. Click the "GAMBLE!" button
+4. Watch as you get a random multiplier:
+   - 66% chance: multiplier between 0x-0.9x (you lose some or all of your bet)
+   - 33% chance: multiplier between 1.1x-3.0x (you win!)
+5. When you hit zero, buy in again for another $1
+6. Try to turn that dollar into a fortune!
 
 ## Features
 
-- 33% win rate (rigged against you, just like real gambling!)
-- Random bet amounts between $10-$30
-- Tracks your wins, losses, and win rate
+- $1 buy-in (can buy in unlimited times)
+- Choose your own bet amount (up to your current balance)
+- Multiplier system: 66% chance to lose, 33% chance to win
+- Tracks your wins, losses, win rate, and total buy-ins
 - Saves your progress in browser localStorage
-- Responsive design
 - Beautiful gradient UI with animations
+- Responsive design
 
 ## Deployment
 
