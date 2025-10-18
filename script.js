@@ -66,7 +66,7 @@ function updateDisplay() {
     }
 }
 
-// The gambling function - 33% chance for multiplier >1x, 66% for <1x
+// The gambling function - 50% chance for multiplier >1x, 50% for <1x
 function gamble() {
     const betAmount = parseFloat(betAmountInput.value);
 
@@ -89,8 +89,8 @@ function gamble() {
         let multiplier;
         let didWin;
 
-        // 33% chance for multiplier >1x, 66% for <1x
-        if (random < 0.33) {
+        // 50% chance for multiplier >1x, 50% for <1x
+        if (random < 0.5) {
             // Win: multiplier between 1.1x and 3.0x
             multiplier = 1.1 + Math.random() * 1.9;
             didWin = true;
